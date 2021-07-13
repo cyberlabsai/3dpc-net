@@ -6,7 +6,7 @@ Year: 2020 <br>
 Source: http://www.cbsr.ia.ac.cn/users/jwan/papers/IJB2020-3DPCNet.pdf <br>
 
 
-![](data/article_pic.png)
+![](Images_Readme/article_pic.png)
 
 # Introduction
 
