@@ -1,0 +1,18 @@
+Cython
+onnxruntime
+numpy
+#torch==1.7.0+cu101 torchvision==0.8.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+#torch==1.7.0+cu101
+#torchvision==0.8.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+#pytorch3d -f https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py36_cu101_pyt170/download.html
+mxnet
+tqdm
+prettytable
+open3d-python
+pandas==1.1.5
+opencv-python
+Tensorboard
+Pillow==7.0.0
+
+
+

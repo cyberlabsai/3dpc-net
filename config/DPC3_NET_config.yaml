@@ -1,0 +1,41 @@
+output_dir: 'experiments/outputs'
+log_dir: 'experiments/log'
+device: [0, 1]
+#device: []
+dataset:
+  name: 'OULU'
+  # root: '/home/OULU/Processed/Protocol_1'
+  # root: '/media/thimabru/ssd/Perse/3dpc-net/data/OULU_labels/Protocol_1'
+  root: '/home/data/OULU_labels/Protocol_1'
+  # num_workers: 16
+  num_workers: 2
+  augmentation:
+    rot_crop: False
+#    gamma_correction: [ 1.0/2.2, 2.2/1.0 ]
+    gamma_correction: [0.4545, 2.2]
+    brightness: 0.5
+    contrast: 0.5
+    saturation: 0.5
+    hue: 0.5
+  train_images: 'Train'
+  # val_images: 'Dev'
+  test_images: 'Test'
+  val_images: 'Train'
+  mean: [ 0.5,0.5,0.5 ]
+  sigma: [ 0.5,0.5,0.5 ]
+model:
+  base: 'DPC3-NET'
+  pretrained: false
+  input_size: [224,224]
+train:
+  # batch_size: 256
+  batch_size: 16
+  optimizer: 'adam'
+  lr: 0.001
+  num_epochs: 150
+  smoothing: True # False= smoothing True= !smoothing
+val:
+  # batch_size: 256
+  batch_size: 16
+test:
+  batch_size: 64
