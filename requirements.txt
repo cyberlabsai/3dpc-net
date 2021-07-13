@@ -12,7 +12,7 @@ open3d-python
 pandas==1.1.5
 opencv-python
 Tensorboard
-Pillow==7.0.0
+Pillow==8.2.0
 
 
 
